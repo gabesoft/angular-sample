@@ -57,12 +57,13 @@
 
             <div class="row">
                 <fieldset class="button-set col-md-12" ng-disabled="!verified || settings.isUnchanged()">
-                    <button class="btn btn-default" ng-click="settings.reset()">RESET</button>
-                    <button class="btn btn-primary" ng-click="settings.update()">SAVE</button>
+                    <button type="button" class="btn btn-default" ng-click="settings.reset()">RESET</button>
+                    <button type="button" class="btn btn-primary" ng-click="settings.update()">SAVE</button>
                 </fieldset>
             </div>
+
+            <pre>user = {{settings.user | json}}</pre>
         </form>
-        <pre>user = {{settings.user | json}}</pre>
     </div>
 </body>
 </html>

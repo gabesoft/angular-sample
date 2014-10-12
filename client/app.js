@@ -14,7 +14,7 @@
                 $scope.verified = ($scope.password === 'abc');
                 $scope.checking = false;
                 $scope.$apply();
-            }, 1500);
+            }, 1000);
         };
     }]);
 
