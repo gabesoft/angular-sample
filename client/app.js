@@ -1,6 +1,21 @@
 (function () {
     var app = angular.module('app', []);
 
+    app.filter('userUrl', function () {
+        return function (username) {
+            return 'www.creativelive.com/users/' + username;
+        };
+    });
+
+    app.controller('VerifyController', [ '$scope', function ($scope) {
+        this.verify = function () {
+            setTimeout(function () {
+                $scope.verified = ($scope.password === 'abc');
+                $scope.$apply();
+            }, 1000);
+        };
+    }]);
+
     app.controller('SettingsController', function () {
         this.user = { timezone: 'AL' };
 
@@ -28,7 +43,9 @@
     });
 
     angular.element(document).ready(function () {
-        var rootEl = document.getElementById('content');
-        angular.bootstrap(rootEl, ['app']);
+        setTimeout(function () {
+            var rootEl = document.getElementById('content');
+            angular.bootstrap(rootEl, ['app']);
+        }, 1000);
     });
 }());

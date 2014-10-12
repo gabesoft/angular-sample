@@ -4,11 +4,11 @@
 .row {
     padding: 40px 0 0 0;
 }
-.verify {
+
+form input.ng-valid.ng-dirty {
+    border: 1px solid green;
 }
-.left-pane {
-}
-.center-pane {
-}
-.right-pane {
+
+form input.ng-invalid.ng-dirty {
+    border: 1px solid red;
 }
