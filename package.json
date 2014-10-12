@@ -1,0 +1,21 @@
+{
+  "name": "angular.sample.forms",
+  "version": "0.0.1",
+  "description": "Angular Forms Sample",
+  "preferGlobal": false,
+  "main": "./lib/index.js",
+  "bin": {},
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gabesoft/angular.sample.forms.git"
+  },
+  "author": {
+    "name": "Gabriel Adomnicai",
+    "email": "gabesoft@gmail.com"
+  },
+  "license": "MIT"
+}
