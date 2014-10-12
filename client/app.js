@@ -9,10 +9,12 @@
 
     app.controller('VerifyController', [ '$scope', function ($scope) {
         this.verify = function () {
+            $scope.checking = true;
             setTimeout(function () {
                 $scope.verified = ($scope.password === 'abc');
+                $scope.checking = false;
                 $scope.$apply();
-            }, 1000);
+            }, 1500);
         };
     }]);
 

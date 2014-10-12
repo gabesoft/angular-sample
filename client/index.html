@@ -16,7 +16,11 @@
         <div class="row">
             <fieldset class="verify col-md-4 form-group">
                 <label for="password-input">Current Password</label>
-                <input id="password-input" type="text" ng-model="password" ng-change="verify.verify()" class="form-control"/>
+                <input id="password-input" type="text" 
+                       ng-model="password" 
+                       ng-change="verify.verify()" 
+                       class="form-control"
+                       ng-class="{ success: verified, checking: checking, invalid: !verified }"/>
             </fieldset>
         </div>
         <form action="" name="account-settings" class="account-settings form-group" ng-controller="SettingsController as settings" novalidate>

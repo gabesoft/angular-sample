@@ -5,6 +5,26 @@
     padding: 40px 0 0 0;
 }
 
+.success {
+    background-color: lightgreen;
+}
+
+.checking {
+    background-color: lightyellow;
+}
+
+.invalid.checking {
+    background-color: lightyellow;
+}
+
+.valid.checking {
+    background-color: lightyellow;
+}
+
+.invalid {
+    background-color: lightsalmon;
+}
+
 form input.ng-valid.ng-dirty {
     border: 1px solid green;
 }
